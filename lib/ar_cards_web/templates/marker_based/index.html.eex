@@ -7,7 +7,7 @@
     <div class="col-md-6">
 
     <p class="neoneffect"  style="text-decoration: none;">
-      匚ㄖㄖㄥ 匚卂尺ᗪ丂
+      匚尺卂乙ㄚ 匚卂尺ᗪ丂
       <br></br>
     </p>
 
@@ -28,17 +28,17 @@
         <%= link "丂卄ㄖ山", to: Routes.marker_based_path(@conn, :show, marker_based) %>
       </button>
 
-        <!--<span><%= link "Edit", to: Routes.marker_based_path(@conn, :edit, marker_based) %></span>
-        <span><%= link "Delete", to: Routes.marker_based_path(@conn, :delete, marker_based), method: :delete, data: [confirm: "Are you sure?"] %></span>-->
+        <span><%= link "Edit", to: Routes.marker_based_path(@conn, :edit, marker_based) %></span>
+        <span><%= link "Delete", to: Routes.marker_based_path(@conn, :delete, marker_based), method: :delete, data: [confirm: "Are you sure?"] %></span>
       </td>
     </tr>
 <% end %>
   </tbody>
 </table>
-<!--<span><%= link "New Marker based", to: Routes.marker_based_path(@conn, :new) %></span>-->
+<span><%= link "New Marker based", to: Routes.marker_based_path(@conn, :new) %></span>
 
     </div>
-    <div class="col-md-3>
+    <div class="col-md-3">
 
     </div>
   </div>
