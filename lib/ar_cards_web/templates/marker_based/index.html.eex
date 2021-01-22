@@ -8,16 +8,18 @@
 
     <p class="neoneffect"  style="text-decoration: none;">
       匚ㄖㄖㄥ 匚卂尺ᗪ丂
-     </p>
+      <br></br>
+    </p>
 
       <table class="table table-dark table-borderless">
   <thead class="thead-dark">
     <tr>
-      <th class="coolname" >几ㄖ爪乃尺乇</th>
+      <th class="coolname" >爪ㄖᗪ乇ㄥㄖ -3ᗪ</th>
       <th></th>
     </tr>
   </thead>
   <tbody>
+  <tr><td></td></tr>
 <%= for marker_based <- @armodels do %>
     <tr>
       <td><%= marker_based.name %></td>
@@ -33,7 +35,7 @@
 <% end %>
   </tbody>
 </table>
-<span><%= link "New Marker based", to: Routes.marker_based_path(@conn, :new) %></span>
+<!--<span><%= link "New Marker based", to: Routes.marker_based_path(@conn, :new) %></span>-->
 
     </div>
     <div class="col-md-3>
