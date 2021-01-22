@@ -1,0 +1,43 @@
+<h1>Show Marker based</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @marker_based.name %>
+  </li>
+
+  <li>
+    <strong>Code:</strong>
+    <%= @marker_based.code %>
+  </li>
+
+  <li>
+    <strong>Gltf:</strong>
+    <%= @marker_based.gltf %>
+  </li>
+
+  <li>
+    <strong>Patt:</strong>
+    <%= @marker_based.patt %>
+  </li>
+
+  <li>
+    <strong>Scale:</strong>
+    <%= @marker_based.scale %>
+  </li>
+
+  <li>
+    <strong>Cc:</strong>
+    <%= @marker_based.cc %>
+  </li>
+
+  <li>
+    <strong>Shop:</strong>
+    <%= @marker_based.shop_id %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.marker_based_path(@conn, :edit, @marker_based) %></span>
+<span><%= link "Back", to: Routes.marker_based_path(@conn, :index) %></span>

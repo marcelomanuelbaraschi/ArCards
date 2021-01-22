@@ -1,0 +1,38 @@
+<a-scene
+    vr-mode-ui="enabled: false;"
+    loading-screen="enabled: true;"
+    renderer="logarithmicDepthBuffer: true;"
+    arjs="trackingMethod: best;
+      sourceType: webcam;
+      debugUIEnabled: false;
+      sourceWidth:1280;
+      sourceHeight:960;
+      displayWidth: 1280;
+      displayHeight: 960;"
+    id="scene-love"
+    embedded
+    gesture-detector>
+
+<a-marker
+    id="animated-marker-<%= @marker_based.name %>"
+    type="pattern"
+    preset="custom"
+    url="/images/<%= @marker_based.patt%>"
+    raycaster="objects: .clickable"
+    emitevents="true"
+    cursor="fuse: false; rayOrigin: mouse;"
+    id="marker-<%= @marker_based.name%>"
+    >
+        <a-entity
+            id="entity-<%= @marker_based.name%>"
+            scale="<%= @marker_based.scale%>"
+            animation-mixer="loop: repeat"
+            class="clickable"
+            gesture-handler
+            gltf-model="/images/<%= @marker_based.gltf%>"
+        ></a-entity>
+    </a-marker>
+
+
+<a-entity camera> </a-entity>
+</a-scene>

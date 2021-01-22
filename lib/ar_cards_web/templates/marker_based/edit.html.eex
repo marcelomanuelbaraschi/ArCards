@@ -1,0 +1,5 @@
+<h1>Edit Marker based</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.marker_based_path(@conn, :update, @marker_based)) %>
+
+<span><%= link "Back", to: Routes.marker_based_path(@conn, :index) %></span>
