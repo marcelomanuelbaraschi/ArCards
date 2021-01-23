@@ -14,16 +14,21 @@
     crossorigin="anonymous">
   </head>
 
-  <body class="crazycardsbody">
+  <body class="container-fluid crazycardsdark">
     <header>
-      <section class="container">
-        <a href="https://phoenixframework.org/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
-        </a>
-      </section>
+    <div class="container crazycardsdark">
+      <nav class="navbar fixed-top navbar-dark crazycardsdark">
+         <a href="#" class="navbar-brand">
+          <img  class="neoneffectlogo" src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix"/>
+          <span class="diamondneoneffect">⋌</span>
+          <span class="neoneffecttitle">卩卄ㄖ乇几丨乂 匚卂尺ᗪ丂</span>
+          <span class="diamondneoneffect">⋋</span>
+         </a>
+      </nav>
+      </div>
     </header>
 
-    <main role="main" class="container" >
+    <main role="main crazycardsdark" >
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
       <%= @inner_content %>

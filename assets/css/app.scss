@@ -42,37 +42,44 @@
         margin: -1rem 0 2rem;
     }
     
-    .crazycardsbody {
+    .crazycardsdark {
         background-color: #212529;
-        color: #dfe0e4;
     }
     
-    .neoneffect {
-        font-size: 20px;
+    .neoneffectlogo {
+        font-size: 15px;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+        animation: blinker 2s linear infinite;
+    }
+    
+    .neoneffecttitle {
+        font-size: 15px;
+        font-style: italic;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+        animation: blinker 2s linear infinite;
+    }
+    
+    .diamondneoneffect {
+        font-size: 15px;
         font-style: italic;
         color: #fff;
         text-align: center;
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #ffffff;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
         animation: blinker 2s linear infinite;
     }
     
     @keyframes blinker {
         50% {
-            opacity: 35%;
+            opacity: 50%;
         }
     }
     
     .table {
-        font-size: 15px;
+        font-size: 18px;
     }
     
-    .coolname {
-        font-style: italic;
-        font-size: 15px;
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF;
-    }
-    
-    .coolshow {
-        font-style: italic;
-        font-size: 15px;
+    main {
+        padding-top: 170px;
     }
